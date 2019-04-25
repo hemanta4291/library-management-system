@@ -1,0 +1,86 @@
+
+.header {
+    background: #6d6060;
+    color: #ada4a4;
+    padding: 50px 0;
+}
+
+.footer {
+    background: #353333;
+    color: #a09797;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.login_container {
+    background: #968686;
+    padding: 100px 0;
+}
+
+a.login {
+    padding: 12px;
+    background: #000;
+    font-size: 20px;
+    font-weight: 700;
+    color: #afa7a7;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+a.regis{
+    padding: 12px;
+    background: #000;
+    font-size: 20px;
+    font-weight: 700;
+    color: #afa7a7;
+    border-radius: 5px;
+}
+
+
+
+.from {
+    background: #3c3d40;
+    padding: 50px 0;
+    color: #cec5c5;
+}
+
+button.btn.btn-primary {
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+a.forget {
+    color: #ddd;
+    margin: 22px;
+    display: inline-block;
+}
+
+
+a.bookadd {
+    background: tomato;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: inline-block;
+    color: #ddd;
+    border-radius: 5px;
+}
+
+.user_details h3 {
+    padding: 13px 0 0 111px;
+    color: green;
+}
+
+.user_details {
+    padding: 50px;
+}
+
+.user_details h2 {
+    padding: 13px;
+}
+
+.from p {
+    color: tomato;
+}
