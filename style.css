@@ -84,3 +84,7 @@ a.bookadd {
 .from p {
     color: tomato;
 }
+
+h1.invalid-request {
+    color: red;
+}

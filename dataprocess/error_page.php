@@ -9,15 +9,19 @@
 
     <div class="row text-center">
         <div class="col-md-12">
-            <h1><?php
+            <h1 class="invalid-request"><?php
 
-                if(isset($_GET['massage_error'])){
+                if(isset($_GET['massage_error'])){ ?>
 
-                    echo $_GET['massage_error'];
 
-                }
+                    <div class="alert alert-danger" role="alert">
+                        invalid request
+                    </div>
 
-                ?></h1>
+
+                <?php } ?>
+
+                </h1>
         </div>
     </div>
 

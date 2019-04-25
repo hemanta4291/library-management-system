@@ -11,7 +11,7 @@ if(isset($_SESSION["user_id"])){
     echo $_SESSION["user_id"];
 }else{
 
-    header("location:dataprocess/error_page.php?massage_error=error session");
+    header("location:dataprocess/error_page.php?massage_error=invalid request");
 }
 
 
