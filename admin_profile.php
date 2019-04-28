@@ -58,7 +58,7 @@ if(isset($_SESSION["user_id"])){
 
             </div>
             <div class="col-md-8">
-                <a href="" class="bookadd">Book Add</a>
+                <a href="book_singup_form.php" class="bookadd">Book Add</a>
                 <h2>Personal Book</h2>
 
                 <table class="table table-dark">
@@ -213,55 +213,45 @@ if(isset($_SESSION["user_id"])){
                 <tr>
                     <th scope="col">id</th>
                     <th scope="col">S.N</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Password</th>
-                    <th scope="col">Action1</th>
-                    <th scope="col">Action2</th>
+                    <th scope="col">book title</th>
+                    <th scope="col">Sub title</th>
+                    <th scope="col">image</th>
+                    <th scope="col">author</th>
+                    <th scope="col">creator</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>
-                        <a href="user_edit.php">Edit</a>|
-                        <a href="user_delete.php">Delete</a>
-                    </td>
-                    <td>
-                        <a href="user_edit.php">Edit</a>|
-                        <a href="user_delete.php">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>
-                        <a id="edit" href="user_edit.php">Edit</a>|
-                        <a id="delete" href="user_delete.php">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>
-                        <a href="user_edit.php">Edit</a>|
-                        <a href="user_delete.php">Delete</a>
-                    </td>
-                </tr>
+
+
+                <?php
+
+                require_once("dataprocess/config.php");
+
+                $showq = "select * from lib_book";
+                $runq = mysqli_query($connect,$showq);
+
+                if($runq==true){
+                    $sri=1;
+                    while($get = mysqli_fetch_array($runq)){ ?>
+
+                        <tr>
+                            <th scope="row"><?php echo $get['id']; ?></th>
+                            <td><?php echo $sri; $sri++; ?></td>
+                            <td><?php echo $get['title']; ?></td>
+                            <td><?php echo $get['sub_title']; ?></td>
+                            <td><img src="images/<?php echo $get['image']; ?>" alt=""></td>
+                            <td><?php echo $get['author']; ?></td>
+                            <td><?php echo $get['creator_id']; ?></td>
+
+                            <td>
+                                <a href="user_edit.php?edit_id=<?php echo $get['id']; ?>">Edit</a>|
+                                <a href="dataprocess/book_delete.php?delete_id=<?php echo $get['id']; ?>">Delete</a>
+                            </td>
+                        </tr>
+
+
+                    <?php } } ?>
+
                 </tbody>
             </table>
         </div>

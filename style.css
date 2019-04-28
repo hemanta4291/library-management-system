@@ -88,3 +88,8 @@ a.bookadd {
 h1.invalid-request {
     color: red;
 }
+
+
+table.table.table-dark img {
+    width: 50px;
+}

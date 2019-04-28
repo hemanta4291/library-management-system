@@ -53,7 +53,7 @@ if(isset($_SESSION["user_id"])){
 
             </div>
             <div class="col-md-8">
-                <a href="" class="bookadd">Book Add</a>
+                <a href="book_singup_form.php" class="bookadd">Book Add</a>
 
 
                 <table class="table table-dark">

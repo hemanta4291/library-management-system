@@ -34,7 +34,7 @@ if(isset($_REQUEST["login"])){
             $_SESSION["singleemail"] = $singleuserdata['email'];
             $_SESSION["role"] = $singleuserdata['role'];
 
-            header("location:sucessfull_login.php?massage=login sucessfull");
+            header("location:../admin_profile.php");
         }else{
             echo "not login";
         }
