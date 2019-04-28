@@ -7,7 +7,7 @@ session_start();
 
 if(isset($_SESSION["user_id"])){
 
-    echo $_SESSION["user_id"];
+
 }else{
 
     header("location:dataprocess/error_page.php?massage_error=invalid request");
@@ -23,7 +23,6 @@ if(isset($_SESSION["user_id"])){
         <div class="row text-center">
            <div class="col-md-12">
                <a class="login" href="index.php">home</a>
-               <a class="login" href="login.php">login</a><a class="regis" href="user_signup_form.php">User Registration</a>
                <a class="regis" href="book_singup_form.php">Book Registration</a>
                <a class="regis" href="user_data_table.php">User Details</a>
                <a class="regis" href="book_details.php">Book Details</a>
@@ -35,15 +34,20 @@ if(isset($_SESSION["user_id"])){
 
 <div class="user_details">
     <div class="container">
-        <div class="row text-center">
-            <h1>User details</h1>
-        </div>
-    </div>
-</div>
-
-<div class="user_table">
-    <div class="container">
         <div class="row">
+            <h2>All User Details</h2>
+
+            <h3>
+                <?php
+
+                if(isset($_GET["massage"])){
+                    echo $_GET["massage"];
+                }elseif(isset($_GET["massagedelete"])){
+                    echo $_GET["massagedelete"];
+                }
+                ?>
+            </h3>
+
             <table class="table table-dark">
                 <thead>
                 <tr>
@@ -52,57 +56,56 @@ if(isset($_SESSION["user_id"])){
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">profile</th>
                     <th scope="col">Password</th>
                     <th scope="col">Action1</th>
                     <th scope="col">Action2</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>
-                        <a href="user_edit.php">Edit</a>|
-                        <a href="user_delete.php">Delete</a>
-                    </td>
-                    <td>
-                        <a href="user_edit.php">Edit</a>|
-                        <a href="user_delete.php">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>
-                        <a id="edit" href="user_edit.php">Edit</a>|
-                        <a id="delete" href="user_delete.php">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>
-                        <a href="user_edit.php">Edit</a>|
-                        <a href="user_delete.php">Delete</a>
-                    </td>
-                </tr>
+
+                <?php
+
+                require_once("dataprocess/config.php");
+
+                $showq = "select * from lib";
+                $runq = mysqli_query($connect,$showq);
+
+                if($runq==true){
+                    $sri=1;
+                    while($get = mysqli_fetch_array($runq)){ ?>
+
+                        <tr>
+                            <th scope="row"><?php echo $get['id']; ?></th>
+                            <td><?php echo $sri; $sri++; ?></td>
+                            <td><?php echo $get['fname']; ?></td>
+                            <td><?php echo $get['lname']; ?></td>
+                            <td><?php echo $get['email']; ?></td>
+                            <td><?php echo $get['role']; ?></td>
+                            <td><img src="images/<?php echo $get['profile']?>" alt="" class="img-thumbnail"></td>
+                            <td><?php echo $get['pass']; ?></td>
+                            <td>
+                                <a href="user_edit.php?edit_id=<?php echo $get['id']; ?>">Edit</a>|
+                                <a href="dataprocess/user_delete.php?delete_id=<?php echo $get['id']; ?>    ">Delete</a>
+                            </td>
+                            <td>
+                                <a href="user_edit.php">Edit</a>|
+                                <a href="user_delete.php">Delete</a>
+                            </td>
+                        </tr>
+
+
+                    <?php } } ?>
+
                 </tbody>
             </table>
         </div>
     </div>
 </div>
+
+
+
 
 
 

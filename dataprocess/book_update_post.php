@@ -5,7 +5,6 @@ session_start();
 
 if(isset($_SESSION["user_id"])){
 
-    echo $_SESSION["user_id"];
 }else{
 
     header("location:dataprocess/error_page.php?massage_error=invalid request");
@@ -18,26 +17,25 @@ if(isset($_SESSION["user_id"])){
 <?php
 require_once("config.php");
 
-if(isset($_POST["update"])){
+if(isset($_POST["book_sinup"])){
 
-    $getid = $_POST["editingid"];
+    $getid = $_POST["book_edit_id"];
 
-    $fname=$_POST["fname"];
-    $lname=$_POST["lname"];
-    $email=$_POST["email"];
-    $role=$_POST["role"];
-    $pass=$_POST["pass"];
-    $checpas=md5($pass);
+    $title=$_POST["title"];
+    $sub_title=$_POST["sub_title"];
+    $author=$_POST["author_name"];
+    $creator=$_POST["creator_name"];
 
-    $user_img = $_FILES["user_img"]["name"];
-    $image_tmp = $_FILES["user_img"]["tmp_name"];
+    $book_img = $_FILES["book_img"]["name"];
+    $image_tmp = $_FILES["book_img"]["tmp_name"];
     $location = "../images/";
     $img_uniq_name = uniqid() . ".jpg";
 
-    if($user_img==''){
+    if($book_img==''){
 
 
-        $update_qury="UPDATE lib SET fname='$fname',lname='$lname',email='$email',role='$role',pass='$pass' WHERE id=$getid";
+        $update_qury="UPDATE lib_book set title='$title',sub_title='$sub_title',
+                    author='$author' WHERE id=$getid";
         $runFrom = mysqli_query($connect,$update_qury);
 
 
@@ -52,7 +50,8 @@ if(isset($_POST["update"])){
 
         move_uploaded_file($image_tmp, $location . "$img_uniq_name");
 
-        $update_qury="UPDATE lib SET fname='$fname',lname='$lname',email='$email',role='$role',pass='$pass',profile='$img_uniq_name' WHERE id=$getid";
+        $update_qury="UPDATE lib_book set title='$title',sub_title='$sub_title',
+                    image='$img_uniq_name',author='$author' WHERE id=$getid";
         $runFrom = mysqli_query($connect,$update_qury);
 
 
@@ -60,7 +59,7 @@ if(isset($_POST["update"])){
 
             header("location: /library/admin_profile.php?massage=update sucessfull");
         }else{
-            echo "update not sucessfull";
+            echo "update with not sucessfull";
         }
 
     }

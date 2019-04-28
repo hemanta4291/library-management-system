@@ -36,7 +36,7 @@ if(isset($_SESSION["user_id"])){
                         while($get = mysqli_fetch_array($runFrom)){ ?>
 
 
-                            <form action="dataprocess/user_update_post.php" method="post">
+                            <form action="dataprocess/user_update_post.php" enctype="multipart/form-data" method="post">
                                 <div class="form-group">
                                     <input type="text" name="fname" value="<?php echo $get['fname'] ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Frist name">
                                 </div>
@@ -44,7 +44,12 @@ if(isset($_SESSION["user_id"])){
                                     <input type="text" name="lname" value="<?php echo $get['lname'] ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name">
                                 </div>
                                 <div class="form-group">
+
                                     <input type="email" name="email" value="<?php echo $get['email'] ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <img src="images/<?php echo $get['profile'] ?>" alt="">
+                                    <input type="file" name="user_img" class="form-control" value="book picture" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Author Name">
                                 </div>
                                 <div class="form-group">
                                     <select class="form-control" name="role" id="exampleFormControlSelect1">
