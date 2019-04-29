@@ -28,3 +28,34 @@
         </div>
     </div>
 </div>
+
+<div class="login_container">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+
+                <?php
+                session_start();
+
+                if(isset($_SESSION["role"]) && $_SESSION["role"]==1){ ?>
+
+                    <a class="regis" href="../library/index.php">home</a>
+                    <a class="regis" href="../library/book_details.php">book details</a>
+                    <a class="regis" href="../library/user_data_table.php">User Details</a>
+                    <a class="regis" href="../library/book_singup_form.php">Book Registration</a>
+                    <a class="regis" href="../library/logout.php">Log Out</a>
+
+                <?php }  else if(isset($_SESSION["role"]) && $_SESSION["role"]==2){ ?>
+                    <a class="regis" href="../library/index.php">home</a>
+                    <a class="regis" href="../library/book_singup_form.php">Book Registration</a>
+                    <a class="regis" href="../library/logout.php">Log Out</a>
+
+                <?php } else{ ?>
+                    <a class="regis" href="../library/login.php">login</a>
+                    <a class="regis" href="../library/user_signup_form.php">sign up</a>
+                <?php } ?>
+
+            </div>
+        </div>
+    </div>
+</div>

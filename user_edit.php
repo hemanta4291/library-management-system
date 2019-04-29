@@ -2,8 +2,6 @@
 
 <?php
 
-session_start();
-
 if(isset($_SESSION["user_id"])){
 
     echo $_SESSION["user_id"];
@@ -14,6 +12,7 @@ if(isset($_SESSION["user_id"])){
 
 
 ?>
+<?php if(isset($_SESSION["role"]) && $_SESSION["role"]==1){ ?>
 
 <div class="from">
     <div class="container">
@@ -74,6 +73,12 @@ if(isset($_SESSION["user_id"])){
         </div>
     </div>
 </div>
+
+<?php }else{
+
+    header("location:error_page.php?massage_error");
+    ?>
+<?php } ?>
 
 <?php require_once("include/footer.php") ?>
 

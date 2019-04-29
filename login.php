@@ -1,19 +1,5 @@
 <?php require_once ("include/header.php")?>
 
-
-
-<div class="login_container">
-    <div class="container">
-        <div class="row text-center">
-           <div class="col-md-12">
-               <a class="login" href="index.php">home</a>
-           </div>
-        </div>
-    </div>
-</div>
-
-
-
     <div class="from">
         <div class="container">
             <div class="row">
@@ -29,8 +15,8 @@
 
                             <?php
 
-                                if(isset($_GET['massgelogin'])){
-                                    echo $_GET['massgelogin'];
+                                if(isset($_GET['login_msg'])){
+                                    echo $_GET['login_msg'];
                                 }
 
                             ?>

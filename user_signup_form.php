@@ -1,7 +1,6 @@
 <?php require_once ("include/header.php")?>
 
 
-
 <div class="user_sinup">
     <div class="container">
         <div class="row text-center">
@@ -11,19 +10,6 @@
         </div>
     </div>
 </div>
-
-<div class="login_container">
-    <div class="container">
-        <div class="row text-center">
-           <div class="col-md-12">
-               <a class="login" href="index.php">home</a>
-               <a class="login" href="login.php">login</a>
-           </div>
-        </div>
-    </div>
-</div>
-
-
 <div class="from">
     <div class="container">
         <div class="row">
@@ -47,6 +33,17 @@
                     <div class="form-group">
                         <input type="text" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
+                    <p>
+                        <?php
+
+                            if(isset($_GET["signup_msg"])){
+                                echo $_GET["signup_msg"];
+                            }else if (isset($_GET["email_msg"])){
+                                echo $_GET["email_msg"];
+                            }
+                        ?>
+
+                    </p>
                     <button type="submit" name="singup" class="btn btn-primary">sign up</button>
 
                 </form>

@@ -2,7 +2,7 @@
 
 
 
-<?php require_once ("../include/header.php")?>
+<?php require_once("include/header.php") ?>
 
 
 <div class="container">
@@ -13,11 +13,9 @@
 
                 if(isset($_GET['massage_error'])){ ?>
 
-
                     <div class="alert alert-danger" role="alert">
-                        Time out login please............
+                        Access Not Available............
                     </div>
-
 
                 <?php } ?>
 
@@ -30,4 +28,4 @@
 
 
 
-<?php require_once ("../include/footer.php")?>
+<?php require_once("include/footer.php") ?>

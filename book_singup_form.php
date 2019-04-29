@@ -2,11 +2,9 @@
 
 <?php
 
-session_start();
-
 if(isset($_SESSION["user_id"])){
 
-    echo $_SESSION["user_id"];
+    $get_id = $_SESSION["user_id"];
 }else{
 
     header("location:dataprocess/error_page.php?massage_error=invalid request");
@@ -25,27 +23,6 @@ if(isset($_SESSION["user_id"])){
         </div>
     </div>
 </div>
-<div class="login_container">
-    <div class="container">
-        <div class="row text-center">
-           <div class="col-md-12">
-               <a class="login" href="index.php">home</a>
-
-               <?php
-
-               if(!isset($_SESSION["user_id"])){?>
-                   <a class="login" href="login.php">login</a>
-               <?php } ?>
-
-
-               <a class="regis" href="user_signup_form.php">User Registration</a>
-               <a class="regis" href="user_data_table.php">User Details</a>
-               <a class="regis" href="book_details.php">Book Details</a>
-           </div>
-        </div>
-    </div>
-</div>
-
 
 <div class="from">
     <div class="container">

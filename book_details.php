@@ -3,8 +3,6 @@
 
 <?php
 
-session_start();
-
 if(isset($_SESSION["user_id"])){
 
 
@@ -16,20 +14,10 @@ if(isset($_SESSION["user_id"])){
 
 ?>
 
+<?php
 
+if(isset($_SESSION["role"]) && $_SESSION["role"]==1){ ?>
 
-<div class="login_container">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <a class="login" href="index.php">home</a>
-                <a class="regis" href="book_singup_form.php">Book Registration</a>
-                <a class="regis" href="user_data_table.php">User Details</a>
-                <a class="regis" href="book_details.php">Book Details</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="user_details">
     <div class="container">
@@ -87,8 +75,9 @@ if(isset($_SESSION["user_id"])){
 </div>
 
 
+<?php } else {
+    header("location:error_page.php?massage_error") ?>
 
-
-
+<?php }?>
 
 <?php require_once ("include/footer.php")?>

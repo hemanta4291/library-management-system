@@ -34,9 +34,9 @@ if(isset($_REQUEST["login"])){
             $_SESSION["singleemail"] = $singleuserdata['email'];
             $_SESSION["role"] = $singleuserdata['role'];
 
-            header("location:../admin_profile.php");
+            header("location:../wellcome_login.php");
         }else{
-            echo "not login";
+            header("location:../login.php?login_msg=user name or password invalid");
         }
 
 

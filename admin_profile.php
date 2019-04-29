@@ -6,41 +6,31 @@
 <?php
 require_once("dataprocess/config.php");
 
-session_start();
+    if(isset($_SESSION["user_id"])){
 
-if(isset($_SESSION["user_id"])){
+        echo $role1 = $_SESSION["role"];
+        $get_active_id = $_SESSION["user_id"];
+    }else{
 
-    $get_active_id = $_SESSION["user_id"];
-}else{
-
-    header("location:dataprocess/error_page.php?massage_error=invalid request");
-}
-
+        header("location:dataprocess/error_page.php?massage_error=invalid request");
+    }
 
 ?>
-
-
-
-
-<div class="login_container">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <a class="regis" href="book_singup_form.php">Book Registration</a>
-                <a class="regis" href="user_data_table.php">User Details</a>
-                <a class="regis" href="book_details.php">Book Details</a>
-                <a class="regis" href="logout.php">Log Out</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <div class="singlebook_details">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Admin details</h1>
+                <?php if(isset($_SESSION["role"]) && $_SESSION["role"]==1 ){?>
+                <h1>Admin Profile</h1>
+                <?php } else{ ?>
+                <h1><?php
+                    $showq = "select * from lib where id=$get_active_id";
+                    $runq = mysqli_query($connect,$showq);
+                    $get_data = mysqli_fetch_array( $runq);
+                    echo $get_data['fname']?> Profile</h1>
+                <?php }?>
             </div>
         </div>
     </div>
