@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32b1b89a-3ead-4479-8451-15315cab57e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataprocess/forgate_pass_post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forget_pass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wellcome_login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_change_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_change_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/book_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/book_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_singup_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/book_singup_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_sucessfull_signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/book_sucessfull_signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataprocess/error_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/error_page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataprocess/login_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/dataprocess/login_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataprocess/user_sinup_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/dataprocess/user_sinup_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/book1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sucessfull_signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/sucessfull_signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_data_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/user_data_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/user_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_profile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_signup_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/user_signup_form.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin_profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="30" column="59" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="600">
+              <caret line="30" column="59" selection-start-line="28" selection-start-column="19" selection-end-line="30" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -45,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocess/book_update_post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-197">
+            <state relative-caret-position="740">
               <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
             </state>
           </provider>
@@ -63,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocess/forgate_pass_post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="320">
               <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
             </state>
           </provider>
@@ -72,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocess/login_post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="38" column="84" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="84" />
+            <state relative-caret-position="760">
+              <caret line="38" column="84" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -81,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="360">
               <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
             </state>
           </provider>
@@ -90,7 +69,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user_signup_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="269">
               <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
             </state>
           </provider>
@@ -99,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocess/user_sinup_post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="460">
               <caret line="23" column="62" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="62" />
             </state>
           </provider>
@@ -108,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
+            <state relative-caret-position="1560">
               <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
             </state>
           </provider>
@@ -117,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin_change_profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
+            <state relative-caret-position="60">
               <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
@@ -212,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php-form-codecan" />
+    <property name="last_opened_file_path" value="D:/farid vai/light-bootstrap-dashboard-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -258,16 +237,21 @@
       <workItem from="1556446557423" duration="27570000" />
       <workItem from="1556520860835" duration="4345000" />
       <workItem from="1556540215753" duration="22303000" />
+      <workItem from="1556611938808" duration="619000" />
+      <workItem from="1556700246680" duration="1217000" />
+      <workItem from="1556822895515" duration="1505000" />
+      <workItem from="1556862467674" duration="1204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117330000" />
+    <option name="totallyTimeSpent" value="121875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28517398" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30332828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -375,13 +359,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/user_profile.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -445,30 +423,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_change_profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="600">
+          <caret line="30" column="59" selection-start-line="28" selection-start-column="19" selection-end-line="30" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataprocess/book_update_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
+        <state relative-caret-position="740">
           <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
         </state>
       </provider>
@@ -480,37 +444,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/dataprocess/forgate_pass_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        <state relative-caret-position="320">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataprocess/login_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="38" column="84" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="84" />
+        <state relative-caret-position="760">
+          <caret line="38" column="84" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataprocess/forgate_pass_post.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="360">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataprocess/user_sinup_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="460">
           <caret line="23" column="62" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_change_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user_signup_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="269">
           <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
         </state>
       </provider>
